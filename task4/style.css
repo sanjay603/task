@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.article-content{
+    display: none;
+}
+P{
+    color: wheat;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.website-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:70px;
+    height:30px;
+    background-color: grey;
+    margin: 5px;
+    border-radius: 10px;
+}
+.banner-container{
+    display:flex;
+    justify-content: end;
+    width:98%;
+    height:200px;
+    background-color: grey;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.article-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+}   
+.article{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+    height:100px;
+    background-color: grey;
+   margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:98%;
+    height: 30px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+}
+@media screen and (max-width:768px) {
+    .article-container{
+          display: none;
+       }
+       .article-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+     .article1{
+        display: flex;
+        align-items: center;
+        background-color: grey;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        writing-mode: vertical-lr;
+        width:40%;
+        height:250px;
+     }
+}
+@media screen and (max-width:320px){
+    .header-container{
+        display: block;
+    }
+    .link{
+      width:100%; 
+      height: 30px;
+      margin: 10px 0px;
+    }
+    .banner-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        margin: 0;
+        width: 100%;
+    }
+    .article-content{
+    width: 100%;
+    height:250px;
+    flex-direction: column;
+    }
+    .article1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:50px;
+        writing-mode: horizontal-tb;
+    }
+    .footer-container{
+        width: 100%;
+        height: 30px;
+        margin: 0;
+    }
+}
